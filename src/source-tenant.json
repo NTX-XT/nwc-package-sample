@@ -1,0 +1,6 @@
+{
+	"clientId": "SOURCE_TENANT_APP_CLIENT_ID",
+	"clientSecret": "SOURCE_TENANT_APP_CLIENT_SECRET",
+	"region": "SOURCE_TENANT_REGION_[US,AU,EU]",
+	"tenantName": "SOURCE_TENANT_NAME"
+}

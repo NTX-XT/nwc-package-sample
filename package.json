@@ -1,0 +1,23 @@
+{
+	"name": "nwc-package-demo",
+	"version": "1.0.0",
+	"description": "Sample project for nwc-package",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"dev": "npm run build && node ./dist/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NTX-XT/nwc-package-sample.git"
+	},
+	"author": "John Pouliezos",
+	"license": "MIT",
+	"dependencies": {
+		"nwc-package": "^1.1.6"
+	},
+	"devDependencies": {
+		"typescript": "^4.3.5"
+	}
+}
