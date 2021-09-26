@@ -15,7 +15,7 @@
 	"author": "John Pouliezos",
 	"license": "MIT",
 	"dependencies": {
-		"nwc-package": "^1.1.9"
+		"nwc-package": "^1.1.11"
 	},
 	"devDependencies": {
 		"@types/node": "^16.10.1",
