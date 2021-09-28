@@ -1,12 +1,12 @@
 import { writeFileSync, readFileSync } from 'fs'
 import { NWCPackageManager } from 'nwc-package'
-import { INWCConnectionInfo, NWCTenant, INWCDataSource, INWCClientApp } from 'nwc-sdk'
+import { INWCConnectionInfo, NWCTenant, INWCDataSource, INWCClientAppCredentials } from 'nwc-sdk'
 import * as sourceClientAppCredentials from './source-tenant.json'
 import * as targetClientAppCredentials from './target-tenant.json'
 const key = 'TAGNAME'
 
 class NwcSdkDemo {
-	public static async getTenant(credentials: INWCClientApp): Promise<NWCTenant> {
+	public static async getTenant(credentials: INWCClientAppCredentials): Promise<NWCTenant> {
 		const tenant = await NWCTenant.connectWithClientAppCredentials(credentials)
 		writeFileSync(`./output/${tenant.tenantInfo.name}-info.json`, JSON.stringify(tenant))
 		return tenant
